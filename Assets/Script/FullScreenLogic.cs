@@ -18,12 +18,6 @@ public class LogiFullScreen : MonoBehaviour
             toggle.isOn = false;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void ActivateFullScreen(bool FullScreen)
     {
         Screen.fullScreen = FullScreen;

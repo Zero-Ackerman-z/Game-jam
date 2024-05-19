@@ -2,22 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class UIManagerMainScreen : MonoBehaviour
 {
     public GameObject PanelOptions;
-    public static UIManager Instance { get; private set; }
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +26,7 @@ public class UIManager : MonoBehaviour
     {
         PanelOptions.SetActive(false);
     }
-
+    
 
 
 }

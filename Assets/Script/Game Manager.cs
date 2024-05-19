@@ -4,58 +4,44 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    [SerializeField] private UIManager uIManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    public void NewGame()
-    {
-        SceneManager.LoadScene("Pantalla de Carga");
-    }
-    public void ContinueGame()
-    {
 
     }
-    public void ShowOptions()
+    public void PauseGame()
     {
-        UIManager.Instance.ShowOptionsMenu();
+        Time.timeScale = 0f;
     }
-    public void ExitOptions()
-    {
-        UIManager.Instance.ExitOptionsMenu();
-    }
-    public void Credits()
-    {
-        SceneManager.LoadScene("Creditos");
 
-    }
-    public void ExitGame()
+    public void ResumeGame()
     {
-        Debug.Log("Saliendo del juego.");
-        Application.Quit();
-
-        UnityEditor.EditorApplication.isPlaying = false;
+        Time.timeScale = 1f;
     }
+    public void ExitMainScreen()
+    {
+        SceneManager.LoadScene("Pantalla Principal");
+    }
+    public void Continue()
+    {
+        uIManager.ReturnGame();
+    }
+    public void CollectibleGameOpen()
+    {
+        uIManager.ShowCollectiblePanel();
+    }
+    public void CollectibleGameClose()
+    {
+        uIManager.HideCollectiblePanel();
+    }
+    
+
 }
 
