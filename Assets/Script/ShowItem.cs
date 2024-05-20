@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class ShowItem : MonoBehaviour
 {
-    public List<CollectibleItems> Items; // Lista de ítems
+    public List<CollectibleItems> Items; 
 
     public TextMeshProUGUI TitleItem;
     public TextMeshProUGUI Description;
@@ -21,7 +21,7 @@ public class ShowItem : MonoBehaviour
         }
         else
         {
-            Debug.LogError("No se han asignado ítems a la lista de Items.");
+            Debug.LogError("No se han asignado");
         }
     }
 

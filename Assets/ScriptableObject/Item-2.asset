@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8f0e2d67e1a7749b82f33c0b74d2d0, type: 3}
   m_Name: Item-2
   m_EditorClassIdentifier: 
-  ItemName: Tenedor con una mini sirena en la punta del mango
+  ItemName: Instrumento de aseo
   ItemDescription: "Instrumento desconocido con 4 puntas peligrosas. Perfecto para
     peinar tent\xE1culos y otras extremidades"
-  imagenItem: {fileID: 21300000, guid: 7d78e4863a2b021439b07687051249d3, type: 3}
+  imagenItem: {fileID: -1703649782, guid: c3dcc5fd1856dcd478d48626e00362eb, type: 3}

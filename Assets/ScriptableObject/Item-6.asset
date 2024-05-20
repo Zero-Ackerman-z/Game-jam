@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8f0e2d67e1a7749b82f33c0b74d2d0, type: 3}
   m_Name: Item-6
   m_EditorClassIdentifier: 
-  ItemName: 'Dado '
+  ItemName: Monumento piramidal
   ItemDescription: "Pir\xE1mide adornada con s\xEDmbolos incomprensibles. Posible
     monumento a una figura de\xEDfica"
-  imagenItem: {fileID: 21300000, guid: 63e353ac1a2f2df43901b1a43030f791, type: 3}
+  imagenItem: {fileID: 2012927559, guid: c3dcc5fd1856dcd478d48626e00362eb, type: 3}

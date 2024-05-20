@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8f0e2d67e1a7749b82f33c0b74d2d0, type: 3}
   m_Name: Item-8
   m_EditorClassIdentifier: 
-  ItemName: Botella de vidrio
+  ItemName: Roca transparente
   ItemDescription: "Formaci\xF3n rocosa transparente que algunas criaturas usan como
     refugio, no parece ser muy resistente"
-  imagenItem: {fileID: 21300000, guid: bef5e4aabd4de6c46bfbc7e9596e59f9, type: 3}
+  imagenItem: {fileID: -734199210, guid: c3dcc5fd1856dcd478d48626e00362eb, type: 3}

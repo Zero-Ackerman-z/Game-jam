@@ -26,8 +26,8 @@ public class UIManager : MonoBehaviour
     IEnumerator ShowPanel()
     {
         PanelPause.SetActive(true);
-        Vector3 FinalPosition = new Vector3(PanelPause.transform.position.x, 0f, PanelPause.transform.position.z);
-        while (PanelPause.transform.position.y > 88f)
+        Vector3 FinalPosition = new Vector3(PanelPause.transform.position.x, 80f, PanelPause.transform.position.z);
+        while (PanelPause.transform.position.y > 80f)
         {
             PanelPause.transform.position = Vector3.MoveTowards(PanelPause.transform.position, FinalPosition, Speed * Time.deltaTime);
             yield return null;
@@ -37,20 +37,14 @@ public class UIManager : MonoBehaviour
     }
     IEnumerator HidePanel()
     {
-        Vector3 posicionFinal = new Vector3(PanelPause.transform.position.x, Screen.height + 90, PanelPause.transform.position.z);
+        Vector3 posicionFinal = new Vector3(PanelPause.transform.position.x, Screen.height + 50, PanelPause.transform.position.z);
 
-        while (PanelPause.transform.position.y < Screen.height + 90)
+        while (PanelPause.transform.position.y < Screen.height + 50)
         {
             PanelPause.transform.position = Vector3.MoveTowards(PanelPause.transform.position, posicionFinal, Speed * Time.deltaTime);
             yield return null;
         }
         PanelPause.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     public void ShowPause()
     {
