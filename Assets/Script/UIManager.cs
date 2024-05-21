@@ -26,8 +26,8 @@ public class UIManager : MonoBehaviour
     IEnumerator ShowPanel()
     {
         PanelPause.SetActive(true);
-        Vector3 FinalPosition = new Vector3(PanelPause.transform.position.x, 80f, PanelPause.transform.position.z);
-        while (PanelPause.transform.position.y > 80f)
+        Vector3 FinalPosition = new Vector3(PanelPause.transform.position.x, 100f, PanelPause.transform.position.z);
+        while (PanelPause.transform.position.y > 100f)
         {
             PanelPause.transform.position = Vector3.MoveTowards(PanelPause.transform.position, FinalPosition, Speed * Time.deltaTime);
             yield return null;

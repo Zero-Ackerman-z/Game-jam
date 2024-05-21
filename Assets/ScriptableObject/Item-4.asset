@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8f0e2d67e1a7749b82f33c0b74d2d0, type: 3}
   m_Name: Item-4
   m_EditorClassIdentifier: 
-  ItemName: Generador de ruido
+  ItemName: Reloj de bolsillo
   ItemDescription: Artefacto con piezas que se mueven en intervalos constantes. Genera
     ruido al moverse
   imagenItem: {fileID: 141721863, guid: c3dcc5fd1856dcd478d48626e00362eb, type: 3}

@@ -16,12 +16,6 @@ public class GameManager : MonoBehaviour
     {
 
     }
-    public void RestartLevel()
-    {
-        string currentSceneName = SceneManager.GetActiveScene().name;
-
-        SceneManager.LoadScene(currentSceneName);
-    }
     public void PauseGame()
     {
         Time.timeScale = 0f;
@@ -47,8 +41,12 @@ public class GameManager : MonoBehaviour
     {
         uIManager.HideCollectiblePanel();
     }
+    public void RestartLevel()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
+    }
 
-    
 
 }
 

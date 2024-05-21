@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8f0e2d67e1a7749b82f33c0b74d2d0, type: 3}
   m_Name: Item-5
   m_EditorClassIdentifier: 
-  ItemName: "Esqueleto de criatura extra\xF1a"
+  ItemName: "Cr\xE1neo humano"
   ItemDescription: "La criatura a la cu\xE1l le pertenecen estos restos es muy peculiar,
     no parece estar dise\xF1ada para nadar"
   imagenItem: {fileID: 2130679819, guid: c3dcc5fd1856dcd478d48626e00362eb, type: 3}

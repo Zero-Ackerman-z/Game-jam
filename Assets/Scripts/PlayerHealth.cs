@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private UIManager uIManager;
-    [SerializeField] private HealthBar healthBar;
-    public int maxHealth = 100;
-
     
+    public int maxHealth = 100;
+    [SerializeField] private HealthBar healthBar;
+    [SerializeField] private UIManager uIManager;
+
     public int currentHealth;
 
     
@@ -26,11 +26,26 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log($"Current health: {currentHealth}");
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         healthBar.SetHealth(currentHealth);
+
         if (currentHealth <= 0)
         {
             Debug.Log("Character has died!");
             Die();
         }
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        Debug.Log($"Healed: {amount}. Current health: {currentHealth}");
+    }
+
+    public void IncreaseMaxHealth(int amount)
+    {
+        maxHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        Debug.Log($"Increased max health by: {amount}. New max health: {maxHealth}");
     }
 
     public void Die()

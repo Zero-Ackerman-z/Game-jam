@@ -23,9 +23,9 @@ public class Boss1 : MonoBehaviour
 
     
     public float chargeTime = 1.5f;
-    public float dashSpeed = 5f;
+    public float dashSpeed = 6f;
     private bool isChargingAttack = false;
-
+    private bool isDashing = false;
     
     void Start()
     {
@@ -90,6 +90,7 @@ public class Boss1 : MonoBehaviour
         
         enemyRb.velocity = Vector2.zero;
         GetComponent<Collider2D>().enabled = true;
+        isDashing = false;
     }
 
     

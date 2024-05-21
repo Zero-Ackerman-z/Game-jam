@@ -32,8 +32,8 @@ public class NewMovement : MonoBehaviour
         Horizontal *= Speed;
 
 
-        if (Horizontal < 0.0f) transform.localScale = new UnityEngine.Vector3(-0.271053f, 0.271053f, 0.271053f);
-        else if (Horizontal > 0.0f) transform.localScale = new UnityEngine.Vector3(0.271053f, 0.271053f, 0.271053f);
+        if (Horizontal < 0.0f) transform.localScale = new UnityEngine.Vector3(-0.1096917f, 0.1096917f, 0.1096917f);
+        else if (Horizontal > 0.0f) transform.localScale = new UnityEngine.Vector3(0.1096917f, 0.1096917f, 0.1096917f);
 
         Vertical = Input.GetAxisRaw("Vertical");
 
@@ -69,6 +69,18 @@ public class NewMovement : MonoBehaviour
             {
                 Debug.Log("Atacando enemigo");
                 enemyHealth.TakeDamage(damagePerHit);
+            }
+            else
+            {
+                Debug.Log("No se encontró el componente EnemyHealth en el enemigo");
+            }
+
+
+            EnemyHealth3 enemyHealth3 = enemyCollider.gameObject.GetComponent<EnemyHealth3>();
+            if (enemyHealth3 != null)
+            {
+                Debug.Log("Atacando enemigo");
+                enemyHealth3.TakeDamage(damagePerHit);
             }
             else
             {

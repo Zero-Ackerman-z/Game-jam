@@ -17,7 +17,7 @@ public class ImageSequence : MonoBehaviour
         }
         else
         {
-            Debug.LogError("No se han asignado imágenes");
+            Debug.LogError("No se han asignado imágenes en el array.");
         }
     }
 
@@ -55,7 +55,7 @@ public class ImageSequence : MonoBehaviour
             case 6:
                 return new Vector2(-rect.width / 2 + 90, 0); // Left-center
             default:
-                return Vector2.zero; 
+                return Vector2.zero; // Center by default
 
         }
     }

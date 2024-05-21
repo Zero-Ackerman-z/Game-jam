@@ -31,7 +31,5 @@ public class MainScreenManager : MonoBehaviour
     {
         Debug.Log("Saliendo del juego.");
         Application.Quit();
-
-        UnityEditor.EditorApplication.isPlaying = false;
     }
 }

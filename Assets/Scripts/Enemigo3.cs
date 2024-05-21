@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewEnemy : MonoBehaviour
+public class Enemy3 : MonoBehaviour
 {
     
     private GameObject Personaje;
@@ -11,7 +11,7 @@ public class NewEnemy : MonoBehaviour
     private Vector2 movementDirection = Vector2.zero;
     public float fieldOfVisionRadius = 3f;
     public float attackRange = 0.5f;
-    public int damagePerHit = 10;
+    public int damagePerHit = 7;
     private float attackCooldown = 1.5f;
     private float timeSinceLastAttack;
     private float Horizontal;
